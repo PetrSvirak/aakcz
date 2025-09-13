@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Tag-shaped background with straight top/bottom -->
+  <path d="M 6 5 L 26 5 L 30 15 L 26 25 L 6 25 L 2 15 Z" fill="#2C3E50" stroke="#16A085" stroke-width="1"/>
+  <!-- PS text -->
+  <text x="16" y="20" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#16A085" text-anchor="middle">PS</text>
+</svg>
