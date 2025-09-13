@@ -1,0 +1,173 @@
+/*----------------------------------------------------------
+Professional IT color palette for sviraak.cz
+Primary: #2C3E50 (dark blue-gray)
+Secondary: #16A085 (teal) 
+Accent: #ECF0F1 (light gray)
+Text: #2C3E50 (dark)
+Highlights: #3498DB (blue)
+----------------------------------------------------------*/
+
+body {
+	background-color: #ECF0F1;
+	font-size: .85em;
+	font-family: "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #2C3E50;
+}
+
+a:link {
+	color: #2C3E50;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #2C3E50;
+}
+
+a:hover {
+	color: #3498DB;
+	text-decoration: underline;
+}
+
+a:active {
+	color: #16A085;
+}
+
+p, ul {
+	margin-bottom: 20px;
+	line-height: 1.6em;
+}
+
+header,
+footer,
+nav,
+section {
+	display: block;
+}
+
+/* HEADINGS   
+----------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+	font-size: 1.5em;
+	color: #2C3E50;
+	font-weight: 300;
+}
+
+h1 {
+	text-align: left;
+	font-size: 3em;
+	font-weight: 300;
+}
+
+#little_boxes h1, h2{
+	font-size: 2em;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/* Ensure name section doesn't wrap */
+.name-section {
+	white-space: nowrap;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+.clear {
+	clear: both;
+}
+
+.error {
+	color: #E74C3C;
+}
+
+/* Custom styles
+----------------------------------------------------------*/
+div{
+	display: block;
+}
+
+#little_boxes{
+	margin: 0 auto;
+	text-align: center;	
+	overflow: hidden;
+	padding: 2em;
+}
+
+.rectangle_link{
+	float: inherit;
+	display: inline-table;
+	text-align: left;
+	position: relative;    
+	margin: 1.2em;
+}
+
+.rectangle_link:active{ 
+	top: 2px;
+	left: 2px;    
+}
+
+a:hover.rectangle_link.disabled {
+	text-decoration: none;
+}
+
+.rectangle{
+	position: relative;
+	display: inline-table;
+	border: solid 2px #2C3E50;
+	float: inherit;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	padding: 1.5em;
+	width: 22em;
+	height: 14em;
+	box-shadow: 0 4px 12px rgba(44, 62, 80, 0.15);
+	transition: box-shadow 0.3s ease;
+}
+
+.rectangle:hover{
+	box-shadow: 0 6px 20px rgba(44, 62, 80, 0.2);
+}
+
+.rectangle_link:active .rectangle{    
+	box-shadow: 0 2px 8px rgba(44, 62, 80, 0.2);
+}
+
+.it-specialist{
+	background-color: #FFFFFF;
+	border-color: #16A085;
+}
+
+.email-composer {
+	visibility: hidden;
+	display: inline;
+	color: #3498DB;
+}
+
+.email-composer:before {
+	visibility: visible;
+	content: attr(data-username) "@" attr(data-firstname) attr(data-surename) "." attr(data-domain);
+}
+
+/* IDE-style visible XML tags */
+.xml-tag {
+	font-style: italic;
+	font-size: 0.8em;
+	font-family: 'Courier New', 'Monaco', 'Consolas', monospace;
+	opacity: 0.7;
+}
+
+.xml-tag.structure { color: #8E44AD; } /* Purple for structure tags */
+.xml-tag.identity { color: #E67E22; }  /* Orange for identity */
+.xml-tag.contact { color: #27AE60; }   /* Green for contact info */
+
+/* XML hierarchy indentation */
+.xml-tag.level-0 { padding-left: 0; }
+.xml-tag.level-1 { padding-left: 1em; }
+.xml-tag.level-2 { padding-left: 2em; }
+
+/* Block content indentation */
+.content-block {
+	padding-left: 2em;
+}
